@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Devesh Singh Yadav — CV</title>
+<style>
+  @font-face { font-family: 'Space Grotesk'; src: url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;700&display=swap'); }
+  @font-face { font-family: 'DM Sans'; src: url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap'); }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'DM Sans', sans-serif; font-size: 14px; line-height: 1.6; color: #1a1a2e; background: #f8f9fa; padding: 40px 20px; }
+  .cv-container { max-width: 900px; margin: 0 auto; background: white; padding: 50px; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); }
+  .header { margin-bottom: 30px; border-bottom: 2px solid #eee; padding-bottom: 20px; }
+  .header h1 { font-family: 'Space Grotesk', sans-serif; font-size: 36px; font-weight: 700; color: #1a1a2e; margin-bottom: 10px; }
+  .contact-info { display: flex; flex-wrap: wrap; gap: 10px 20px; font-size: 14px; color: #666; }
+  .contact-info a { color: #18728a; text-decoration: none; font-weight: 500; }
+  .section { margin-top: 30px; }
+  .section-title { font-family: 'Space Grotesk', sans-serif; font-size: 18px; font-weight: 700; text-transform: uppercase; color: #18728a; margin-bottom: 15px; border-left: 4px solid #18728a; padding-left: 15px; }
+  .summary { font-size: 15px; color: #333; }
+  .job, .project { margin-bottom: 20px; }
+  .job-header, .project-header { display: flex; justify-content: space-between; font-weight: 600; font-size: 16px; margin-bottom: 5px; }
+  .job-company { color: #6c2ba6; }
+  .job-period { color: #888; font-size: 13px; }
+  .job-role { font-style: italic; color: #555; margin-bottom: 8px; }
+  ul { list-style-type: none; }
+  li::before { content: "• "; color: #18728a; font-weight: bold; }
+  li { margin-bottom: 5px; padding-left: 5px; }
+  .skills-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 15px; }
+  .skill-cat { font-weight: 700; margin-bottom: 5px; color: #333; }
+  @media (max-width: 600px) { .cv-container { padding: 20px; } .header h1 { font-size: 28px; } }
+</style>
+</head>
+<body>
+  <div class="cv-container">
+    <header class="header">
+      <h1>Devesh Singh Yadav</h1>
+      <div class="contact-info">
+        <span>Bhopal, India</span>
+        <a href="mailto:dsy230105@gmail.com">dsy230105@gmail.com</a>
+        <a href="https://linkedin.com/in/deveshsy">LinkedIn</a>
+        <a href="https://github.com/deveshsy">GitHub</a>
+        <a href="https://alignai.streamlit.app">Portfolio</a>
+      </div>
+    </header>
+
+    <section class="section">
+      <h2 class="section-title">Professional Summary</h2>
+      <p class="summary">Third-year Computer Science student and incoming CS Intern at Andritz Hydro, specializing in <strong>Agentic LLM Pipelines, RAG architectures, and scalable backend systems</strong>. Ranked AIR 217 in TCS CodeVita. Passionate about building deterministic AI systems that solve real-world automation challenges.</p>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Experience</h2>
+      <div class="job">
+        <div class="job-header"><span class="job-company">Andritz Hydro</span><span class="job-period">May 2026 – Present</span></div>
+        <div class="job-role">Computer Science Intern</div>
+        <ul>
+          <li>Focusing on industrial digitalization and bridging heavy industry with software solutions.</li>
+          <li>Building production-grade engineering foundations for large-scale enterprise environments.</li>
+        </ul>
+      </div>
+      <div class="job">
+        <div class="job-header"><span class="job-company">AICTE x Qlik Sense</span><span class="job-period">2024</span></div>
+        <div class="job-role">Business Analytics Intern</div>
+        <ul>
+          <li>Built interactive dashboards for KPI tracking and data storytelling using Qlik Sense.</li>
+          <li>Applied associative data modeling on real business datasets and prepared data pipelines.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Selected Projects</h2>
+      <div class="project">
+        <div class="project-header"><span>AlignAI - Agentic Resume Tailoring System</span><a href="https://alignai.streamlit.app">Live Demo</a></div>
+        <ul>
+          <li>Designed a dual-agent pipeline: a low-temperature LLM Critic audits resumes vs JDs while a Strategist agent rewrites sections.</li>
+          <li>Engineered a hard-gate human-in-the-loop verification system ensuring 100% factual accuracy.</li>
+        </ul>
+      </div>
+      <div class="project">
+        <div class="project-header"><span>GitGrade - AI Repository Quality Auditor</span><a href="https://gitgrade.streamlit.app">Live Demo</a></div>
+        <ul>
+          <li>Built an automated evaluation engine that scores public GitHub repositories against industry standards (CI/CD, coverage).</li>
+          <li>Integrated PyGithub for recursive analysis and utilized GPT-4o-mini in JSON mode for deterministic summaries.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-grid">
+        <div><div class="skill-cat">AI & ML</div>LangChain, RAG, Agentic Pipelines, OpenAI/Gemini APIs</div>
+        <div><div class="skill-cat">Languages</div>Python, TypeScript, SQL, Bash, C/C++, Java</div>
+        <div><div class="skill-cat">Backend</div>FastAPI, Pydantic, REST API Design, Streamlit</div>
+        <div><div class="skill-cat">DevOps</div>Git, Docker, AWS, GitHub Actions, Linux</div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Achievements</h2>
+      <ul>
+        <li><strong>TCS CodeVita Season 12:</strong> Secured AIR 217 (National Competitive Programming).</li>
+        <li><strong>Open Source:</strong> Contributor to PyAptamer and various AI tooling repositories.</li>
+      </ul>
+    </section>
+  </div>
+</body>
+</html>
